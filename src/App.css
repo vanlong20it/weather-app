@@ -1,38 +1,109 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  height: 100vh;
+  background-image: url("./assets/images/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.app {
   text-align: center;
+  border-radius: 15px;
+  width: 350px;
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.76) 0px 4px 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.app .app-wrapper {
+  border-radius: 15px;
+  z-index: 10;
+  padding: 20px;
+  height: 600px;
+  position: relative;
+  background-image: url("./assets/images/bg-app.jpg");
+  background-size: cover;
+  background-position: center;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.app .app-wrapper .city-name {
+  margin-top: 4rem;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.app .app-wrapper .time {
+  text-align: center;
+  font-size: 1rem;
+}
+.app .app-wrapper .temp {
+  box-shadow: rgba(0, 0, 0, 0.658) 0px 4px 12px;
+  margin: 20px auto;
+  width: 280px;
+  color: #fff;
+  text-shadow: 0px 3px 6px #000;
+  font-size: 4rem;
+  text-align: center;
+  padding: 3rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 9px;
+}
+.app .app-wrapper .status {
+  font-size: 3rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.app .app-wrapper .more-info {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+.app .app-wrapper .more-info .info-item {
+  flex: 1;
+}
+.app .app-wrapper .more-info .info-item p {
+  margin-top: 5px;
+}
+.app .input-field {
+  width: 100%;
+  height: 40px;
+  padding: 0px 20px;
+  font-size: 20px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  transition: all 0.2s ease-out;
+}
+.app .input-field:focus {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.555) 0px 4px 12px;
+  outline: none;
+}
+.app p.fixed {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 9999;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error-app {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  padding: 3rem;
+  background-color: #ffffff80;
+  border-radius: 9px;
+  color: red;
+  box-shadow: rgba(99, 99, 99, 0.705) 0px 2px 8px 0px;
+  transform: translate(-50%, -50%);
 }
+
+/*# sourceMappingURL=App.css.map */
